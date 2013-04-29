@@ -1,6 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage{a4wide,ngerman,url,graphicx}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \setcounter{secnumdepth}{2}
 
 \parindent0pt
@@ -12,38 +12,38 @@
 
 \newcommand{\knopf}[1]{{\sc #1}}
 
-\author{Daniel Gerber, Hans-Gert Gräbe\\ 
-Institut für Informatik, Universität Leipzig}
+\author{Daniel Gerber, Hans-Gert GrÃ¤be\\ 
+Institut fÃ¼r Informatik, UniversitÃ¤t Leipzig}
 
 \title{Die OLAT-Erweiterung XMAN -- Handbuch}
-\date{Überarbeitete Version vom Januar 2010}
+\date{Ãœberarbeitete Version vom Januar 2010}
 \begin{document}
 \maketitle
 
 \tableofcontents
 
-\section*{Einführung}
+\section*{EinfÃ¼hrung}
 
-\subsection*{Über dieses Handbuch}
+\subsection*{Ãœber dieses Handbuch}
 
-Dieses Handbuch soll Sie in die Arbeit mit der Prüfungsverwaltungssoftware
-XMan einführen und Ihnen Konzeption sowie grundlegende Funktionalität der
-Software nahe bringen. Dieses Handbuch ist für Nutzer geschrieben, die noch
-keine Erfahrung mit XMan haben. Ihnen wird Schritt für Schritt erklärt, wie
-einzelne Funktionen zu verwenden sind.  Fortgeschrittene Nutzer können dieses
+Dieses Handbuch soll Sie in die Arbeit mit der PrÃ¼fungsverwaltungssoftware
+XMan einfÃ¼hren und Ihnen Konzeption sowie grundlegende FunktionalitÃ¤t der
+Software nahe bringen. Dieses Handbuch ist fÃ¼r Nutzer geschrieben, die noch
+keine Erfahrung mit XMan haben. Ihnen wird Schritt fÃ¼r Schritt erklÃ¤rt, wie
+einzelne Funktionen zu verwenden sind.  Fortgeschrittene Nutzer kÃ¶nnen dieses
 Handbuch als Referenz verwenden und sich am Inhaltsverzeichnis orientieren, um
-eine bestehende Frage möglichst schnell beantwortet zu bekommen.
+eine bestehende Frage mÃ¶glichst schnell beantwortet zu bekommen.
 
-In diesem Handbuch wird auf die Beistellung der weiblichen Form zur männlichen
-verzichtet. Dies dient ausschließlich der besseren Lesbarkeit.
+In diesem Handbuch wird auf die Beistellung der weiblichen Form zur mÃ¤nnlichen
+verzichtet. Dies dient ausschlieÃŸlich der besseren Lesbarkeit.
 
 Sollten in diesem Dokument Fehler enthalten sein oder ein Sachverhalt nicht
 detailliert genug beschrieben sein, bitten wir Sie, uns
-Verbesserungsvorschläge über die Emailadresse
+VerbesserungsvorschlÃ¤ge Ã¼ber die Emailadresse
 \begin{center}
   \url{olat-portal@informatik.uni-leipzig.de} 
 \end{center}
-zu unterbreiten, um die Qualität dieses Dokuments durch Ihre Mithilfe weiter
+zu unterbreiten, um die QualitÃ¤t dieses Dokuments durch Ihre Mithilfe weiter
 zu verbessern.
 
 \subsection*{Aufbau dieses Handbuchs}
@@ -51,37 +51,37 @@ zu verbessern.
 Das Handbuch ist in drei Kapitel unterteilt. Im ersten Kapitel wird das Portal
 {\em aus der Sicht eines studentischen Nutzers} beschrieben. Es werden
 grundlegende Fragen wie Registration an der Plattform und Beantragung der
-elektronischen Studentenakte sowie die Einschreibung zu Prüfungen beschrieben.
+elektronischen Studentenakte sowie die Einschreibung zu PrÃ¼fungen beschrieben.
 
 Das zweite Kapitel widmet sich der Darstellung der Portalfunktionen {\em aus
-  Sicht der Rolle Prüfungsamt}. Es wird hier insbesondere darauf eingegangen,
-wie Blöcke/Module und Studiengänge im System bereitgestellt werden.  Weiter
+  Sicht der Rolle PrÃ¼fungsamt}. Es wird hier insbesondere darauf eingegangen,
+wie BlÃ¶cke/Module und StudiengÃ¤nge im System bereitgestellt werden.  Weiter
 wird die Verwaltung der elektronischen Studentenakte aus Sicht der Rolle
-Prüfungsamt erläutert.
+PrÃ¼fungsamt erlÃ¤utert.
 
-Das letzte Kapitel des Handbuchs stellt die von {\em Prüfungsverantwortlichen}
-nutzbare Funktionalität zur Erstellung und Verwaltung von Prüfungen vor.
-Hierzu wird schrittweise erklärt, wie eine Prüfung erstellt und bearbeitet
+Das letzte Kapitel des Handbuchs stellt die von {\em PrÃ¼fungsverantwortlichen}
+nutzbare FunktionalitÃ¤t zur Erstellung und Verwaltung von PrÃ¼fungen vor.
+Hierzu wird schrittweise erklÃ¤rt, wie eine PrÃ¼fung erstellt und bearbeitet
 werden kann.
 
 \clearpage
-\section{Hilfe für Studenten}
+\section{Hilfe fÃ¼r Studenten}
 
 \subsection{Registration und Anmeldung am OLAT-PA-Portal}
 
-Am OLAT-PA-Portal erfolgt die Authentifizierung für Studenten über den
-zentralen Studserv-Account der Universität mit den Ihnen im Zuge der
-Immatrikulation bekanntgegebenen Zugangsdaten.  Während des ersten Zugangs zum
-OLAT-PA-Portal werden einige Daten abgefragt, die für das Prüfungsmanagement
-erforderlich sind, aber vom Studserv-Account nicht mit übertragen werden.
-Geben Sie diese persönlichen Daten entsprechend des vorgegebenen Formulars ein
-und bestätigen Sie die Eingabe.
+Am OLAT-PA-Portal erfolgt die Authentifizierung fÃ¼r Studenten Ã¼ber den
+zentralen Studserv-Account der UniversitÃ¤t mit den Ihnen im Zuge der
+Immatrikulation bekanntgegebenen Zugangsdaten.  WÃ¤hrend des ersten Zugangs zum
+OLAT-PA-Portal werden einige Daten abgefragt, die fÃ¼r das PrÃ¼fungsmanagement
+erforderlich sind, aber vom Studserv-Account nicht mit Ã¼bertragen werden.
+Geben Sie diese persÃ¶nlichen Daten entsprechend des vorgegebenen Formulars ein
+und bestÃ¤tigen Sie die Eingabe.
 
 \subsection{Elektronische Studentenakte}
 
-Im zweiten Schritt müssen Sie eine {\em Elektronische Studentenakte} (ESA)
+Im zweiten Schritt mÃ¼ssen Sie eine {\em Elektronische Studentenakte} (ESA)
 beantragen, in der die relevanten operativen Informationen zum
-Prüfungsgeschehen gespeichert sind. 
+PrÃ¼fungsgeschehen gespeichert sind. 
 
 Dazu klicken Sie unter \knopf{Home $>$ Meine Studentenakte} auf das auf der
 rechten Seite erscheinende Werkzeug \knopf{Elektronische Studentenakte $>$
@@ -89,383 +89,383 @@ rechten Seite erscheinende Werkzeug \knopf{Elektronische Studentenakte $>$
 
 \bild{.95}{ESA-Beantragen}
 
-Füllen Sie die noch offenen Felder des erscheinenden Formulars aus und
+FÃ¼llen Sie die noch offenen Felder des erscheinenden Formulars aus und
 kontrollieren Sie die Richtigkeit der Angaben.
 
 \bild{.7}{ESA-Eingaben}
 
 Als {\em Login} und {\em Email-Adresse} werden Ihre Studserv-Daten verwendet.
-Dies kann nicht geändert werden.  Beachten Sie, dass Ihre {\em Matrikelnummer}
-ausschließlich aus Zahlen bestehen darf.  Wählen Sie Ihren {\em Studiengang}
-aus der Liste der vorgegebenen Einträge.  Falls Ihr Studiengang dort nicht
-angegeben ist, wählen Sie den Studiengang {\em Sonstige}.
+Dies kann nicht geÃ¤ndert werden.  Beachten Sie, dass Ihre {\em Matrikelnummer}
+ausschlieÃŸlich aus Zahlen bestehen darf.  WÃ¤hlen Sie Ihren {\em Studiengang}
+aus der Liste der vorgegebenen EintrÃ¤ge.  Falls Ihr Studiengang dort nicht
+angegeben ist, wÃ¤hlen Sie den Studiengang {\em Sonstige}.
 
 Haben Sie die Studentenakte erfolgreich beantragt, so wird folgender Text auf
 dem Bildschirm ausgegeben:
 \begin{quote}
-  Es liegt ein Antrag auf Erstellung oder Änderung Ihrer elektronischen
-  Studentenakte im Prüfungsamt vor. Bitte gedulden Sie sich noch etwas, bis
-  das Prüfungsamt Ihre elektronische Studentenakte validiert hat.
+  Es liegt ein Antrag auf Erstellung oder Ã„nderung Ihrer elektronischen
+  Studentenakte im PrÃ¼fungsamt vor. Bitte gedulden Sie sich noch etwas, bis
+  das PrÃ¼fungsamt Ihre elektronische Studentenakte validiert hat.
 \end{quote}
-Sobald das Prüfungsamt Ihre ESA validiert hat, erhalten Sie eine
-Bestätigungsemail an die in der Akte angegebene Emailadresse.  Von nun an
-können Sie sich zu anstehenden Prüfungen einschreiben. Weiterhin wird
-automatisch ein Eintrag über die Validierung in Ihrer ESA erzeugt.
+Sobald das PrÃ¼fungsamt Ihre ESA validiert hat, erhalten Sie eine
+BestÃ¤tigungsemail an die in der Akte angegebene Emailadresse.  Von nun an
+kÃ¶nnen Sie sich zu anstehenden PrÃ¼fungen einschreiben. Weiterhin wird
+automatisch ein Eintrag Ã¼ber die Validierung in Ihrer ESA erzeugt.
 
-Wenn Sie eine Änderung dieser persönlichen Angaben in einer bereits
+Wenn Sie eine Ã„nderung dieser persÃ¶nlichen Angaben in einer bereits
 validierten Studentenakte beantragen, wird Ihre Akte automatisch invalidiert
-und dem Prüfungsamt zur erneuten Validierung vorgelegt. Dies wird ebenfalls in
+und dem PrÃ¼fungsamt zur erneuten Validierung vorgelegt. Dies wird ebenfalls in
 der Akte vermerkt.
 
-Sie können Ihre eigene Akte über \knopf{Home $>$ Meine Studentenakte}
-einsehen.  Beachten Sie, dass das Portal ausschließlich der operativen
-Unterstützung des Prüfungsgeschehens dient und nur die endgültigen Ergebnisse
-Eingang in Ihre zentral an der Universität geführten Unterlagen finden. Bei
-Unstimmigkeiten zum Inhalt der ESA nehmen Sie bitte Kontakt zum Prüfungsamt
+Sie kÃ¶nnen Ihre eigene Akte Ã¼ber \knopf{Home $>$ Meine Studentenakte}
+einsehen.  Beachten Sie, dass das Portal ausschlieÃŸlich der operativen
+UnterstÃ¼tzung des PrÃ¼fungsgeschehens dient und nur die endgÃ¼ltigen Ergebnisse
+Eingang in Ihre zentral an der UniversitÃ¤t gefÃ¼hrten Unterlagen finden. Bei
+Unstimmigkeiten zum Inhalt der ESA nehmen Sie bitte Kontakt zum PrÃ¼fungsamt
 auf.
 
-\subsection{Einschreibung zu einer Prüfung}
+\subsection{Einschreibung zu einer PrÃ¼fung}
 
-Zu einer Prüfung können sich nur {\bf Studenten mit validierter ESA}
+Zu einer PrÃ¼fung kÃ¶nnen sich nur {\bf Studenten mit validierter ESA}
 einschreiben.
 
-Nachdem Sie im Reiter \knopf{Lernressourcen} die gewünschte Prüfung über den
-Katalog, die Suchmaske oder über die Liste aller Prüfungen gefunden und
-gestartet haben, erhalten sie eine Übersicht folgender Art:
+Nachdem Sie im Reiter \knopf{Lernressourcen} die gewÃ¼nschte PrÃ¼fung Ã¼ber den
+Katalog, die Suchmaske oder Ã¼ber die Liste aller PrÃ¼fungen gefunden und
+gestartet haben, erhalten sie eine Ãœbersicht folgender Art:
 
 \bild{.9}{Pruefung-Einschreiben}
 
-Handelt es sich bei der gewählten Prüfung um eine mündliche Prüfung, wird
+Handelt es sich bei der gewÃ¤hlten PrÃ¼fung um eine mÃ¼ndliche PrÃ¼fung, wird
 Ihnen -- wie im Bild dargestellt -- eine Liste mit noch offenen Terminen
-angeboten.  Dies gilt auch für schriftliche Prüfungen, allerdings gibt es hier
-lediglich einen Termin zur Auswahl. Um sich zu einer Prüfung einzuschreiben,
-wählen Sie einen für Sie passenden freien Termin durch Drücken des
+angeboten.  Dies gilt auch fÃ¼r schriftliche PrÃ¼fungen, allerdings gibt es hier
+lediglich einen Termin zur Auswahl. Um sich zu einer PrÃ¼fung einzuschreiben,
+wÃ¤hlen Sie einen fÃ¼r Sie passenden freien Termin durch DrÃ¼cken des
 \knopf{Einschreiben}-Buttons. Nach diesem Schritt zeigt Ihnen das System unter
-\knopf{Mein Termin} Termin und Ort Ihrer Prüfung an. Zusätzlich erhalten Sie
-zur Bestätigung eine Email vom System mit diesen Daten. Außerdem kann der
-weitere Prüfungsverlauf nun in der eigenen Studentenakte verfolgt werden.
-Zusätzlich wird für Ihre Prüfung ein Termin im persönlichen Kalender erzeugt.
+\knopf{Mein Termin} Termin und Ort Ihrer PrÃ¼fung an. ZusÃ¤tzlich erhalten Sie
+zur BestÃ¤tigung eine Email vom System mit diesen Daten. AuÃŸerdem kann der
+weitere PrÃ¼fungsverlauf nun in der eigenen Studentenakte verfolgt werden.
+ZusÃ¤tzlich wird fÃ¼r Ihre PrÃ¼fung ein Termin im persÃ¶nlichen Kalender erzeugt.
  
 \subsection{Willkommens-Seite verstehen}
 
-Nachdem Sie sich am Prüfungsportal angemeldet haben, erscheint der
-Startbildschirm mit geöffnetem \knopf{Home}-Reiter.
+Nachdem Sie sich am PrÃ¼fungsportal angemeldet haben, erscheint der
+Startbildschirm mit geÃ¶ffnetem \knopf{Home}-Reiter.
 
 \bild{.9}{Startbildschirm}
 
-Mit einem Druck auf \knopf{Seite konfigurieren} können Sie Ihre Startseite
-personalisieren. Sie können die zur Verfügung stehenden Portlets beliebig
+Mit einem Druck auf \knopf{Seite konfigurieren} kÃ¶nnen Sie Ihre Startseite
+personalisieren. Sie kÃ¶nnen die zur VerfÃ¼gung stehenden Portlets beliebig
 verschieben oder auch entfernen. Zum Beispiel zeigt Ihnen das Portlet
-\knopf{Meine ausstehenden Prüfungen} einen Überblick über Ihre offenen
-Prüfungen.  Durch Drücken auf den Namen wird die Prüfungsansicht gestartet.
-Über das Kalenderportlet wird der persönliche Kalender gestartet.
+\knopf{Meine ausstehenden PrÃ¼fungen} einen Ãœberblick Ã¼ber Ihre offenen
+PrÃ¼fungen.  Durch DrÃ¼cken auf den Namen wird die PrÃ¼fungsansicht gestartet.
+Ãœber das Kalenderportlet wird der persÃ¶nliche Kalender gestartet.
 
-\subsection{Prüfungsergebnisse in der Elektronischen Studentenakte einsehen}
+\subsection{PrÃ¼fungsergebnisse in der Elektronischen Studentenakte einsehen}
 
-Sobald der zuständige Prüfer die Bewertung Ihrer Prüfungsleistung eingetragen
-hat, erhalten Sie eine Benachrichtigungsemail. Ab diesem Zeitpunkt können Sie
-das Ergebnis Ihrer Prüfung in Ihrer ESA einsehen.  Ihre Studentenakte hat etwa
+Sobald der zustÃ¤ndige PrÃ¼fer die Bewertung Ihrer PrÃ¼fungsleistung eingetragen
+hat, erhalten Sie eine Benachrichtigungsemail. Ab diesem Zeitpunkt kÃ¶nnen Sie
+das Ergebnis Ihrer PrÃ¼fung in Ihrer ESA einsehen.  Ihre Studentenakte hat etwa
 das folgende Aussehen:
 
 \bild{.9}{ESA-Ansicht}
 
-Ist eine Änderung Ihrer elektronischen Studentenakte erforderlich, so kann
-dies über das Werkzeug \knopf{Änderung beantragen} beantragt werden. Beachten
-Sie, dass Ihre Akte bei einer Änderung zunächst invalidiert wird und Sie sich
-bis zur erneuten Validierung nicht zu anstehenden Prüfungen einschreiben
-können.
+Ist eine Ã„nderung Ihrer elektronischen Studentenakte erforderlich, so kann
+dies Ã¼ber das Werkzeug \knopf{Ã„nderung beantragen} beantragt werden. Beachten
+Sie, dass Ihre Akte bei einer Ã„nderung zunÃ¤chst invalidiert wird und Sie sich
+bis zur erneuten Validierung nicht zu anstehenden PrÃ¼fungen einschreiben
+kÃ¶nnen.
 
 \clearpage
-\section{Hilfe für die Rolle Prüfungsamt}
+\section{Hilfe fÃ¼r die Rolle PrÃ¼fungsamt}
 
 \subsection{Registration am PA-OLAT-Portal}
 
-Für die Registration am Portal wenden Sie sich bitte an die
-Portaladministration.  Diese legt für Sie einen neuen Account an, schaltet die
-erforderlichen Rechte frei und trägt Sie außerdem in die Arbeitsgruppe {\em
-  Prüfer} ein.
+FÃ¼r die Registration am Portal wenden Sie sich bitte an die
+Portaladministration.  Diese legt fÃ¼r Sie einen neuen Account an, schaltet die
+erforderlichen Rechte frei und trÃ¤gt Sie auÃŸerdem in die Arbeitsgruppe {\em
+  PrÃ¼fer} ein.
 
-Über den Reiter \knopf{Arbeitsgruppe} oder über \knopf{Home $>$ Meine
-  Arbeitsgruppen} können Sie zum Arbeitsbereich dieser Gruppe wechseln, wo
+Ãœber den Reiter \knopf{Arbeitsgruppe} oder Ã¼ber \knopf{Home $>$ Meine
+  Arbeitsgruppen} kÃ¶nnen Sie zum Arbeitsbereich dieser Gruppe wechseln, wo
 insbesondere im {\em Forum} und {\em Wiki} aktuelle Informationen zum Betrieb
-des Portals aus der Sicht von Prüfenden und Prüfungsverwaltung zu finden sind.
+des Portals aus der Sicht von PrÃ¼fenden und PrÃ¼fungsverwaltung zu finden sind.
 
-Über \knopf{Home $>$ Einstellungen} können Sie das Ihnen zugewiesene
-provisorische Passwort ändern.
+Ãœber \knopf{Home $>$ Einstellungen} kÃ¶nnen Sie das Ihnen zugewiesene
+provisorische Passwort Ã¤ndern.
 
 \subsection{Studiengang erstellen}
 
 Jeder Student muss sich im Zuge der Beantragung seiner ESA einem Studiengang
 aus einer vorgegebenen Liste zuordnen.  Die Liste der dabei angezeigten
-Studiengänge wird durch die Rolle Prüfungsamt verwaltet. 
+StudiengÃ¤nge wird durch die Rolle PrÃ¼fungsamt verwaltet. 
 
-Um einen neuen Studiengang anzulegen wählen Sie im Menübaum des Reiters
-\knopf{Prüfungsverwaltung} den Link \knopf{Studiengänge}. Ein Klick auf das
-auf der rechten Seite erscheinende Werkzeug \knopf{Hinzufügen} öffnet ein
+Um einen neuen Studiengang anzulegen wÃ¤hlen Sie im MenÃ¼baum des Reiters
+\knopf{PrÃ¼fungsverwaltung} den Link \knopf{StudiengÃ¤nge}. Ein Klick auf das
+auf der rechten Seite erscheinende Werkzeug \knopf{HinzufÃ¼gen} Ã¶ffnet ein
 Dialogfenster, in welchem Sie den Namen des neuen Studienganges eintragen
-müssen.  Nach einem Klick auf \knopf{Bestätigen} sehen Sie den erzeugten
-Studiengang in der Tabelle aller verfügbaren Studiengänge.
+mÃ¼ssen.  Nach einem Klick auf \knopf{BestÃ¤tigen} sehen Sie den erzeugten
+Studiengang in der Tabelle aller verfÃ¼gbaren StudiengÃ¤nge.
 
-Jeder Studiengang bekommt dabei eine eindeutige unveränderliche systeminterne
-ID zugeordnet, über die Verweise aufgelöst werden. Der Name des Studiengangs
-kann deshalb gefahrlos geändert werden. Klicken Sie dazu auf den Namen des
-Studienganges. Es öffnet sich wieder das Dialogfenster, in welchem die
-Änderungen vorgenommen werden können. Beachten Sie, dass es nicht möglich ist,
+Jeder Studiengang bekommt dabei eine eindeutige unverÃ¤nderliche systeminterne
+ID zugeordnet, Ã¼ber die Verweise aufgelÃ¶st werden. Der Name des Studiengangs
+kann deshalb gefahrlos geÃ¤ndert werden. Klicken Sie dazu auf den Namen des
+Studienganges. Es Ã¶ffnet sich wieder das Dialogfenster, in welchem die
+Ã„nderungen vorgenommen werden kÃ¶nnen. Beachten Sie, dass es nicht mÃ¶glich ist,
 den Namen eines Studienganges auf den Namen eines bereits vorhandenen
-Studienganges zu ändern.  
+Studienganges zu Ã¤ndern.  
 
 Um Inkonsistenzen in Studentenakten zu vermeiden, ist es derzeit nicht
-möglich, einen Studiengang aus dem System zu entfernen.
+mÃ¶glich, einen Studiengang aus dem System zu entfernen.
 
 \subsection{Block/Modul erstellen}
 
-Prüfungen (als semesterspezifische Instanzen) sind einem Block/Modul
-zuzuordnen, über den die administrative Einordnung der Prüfung verwaltet wird.
+PrÃ¼fungen (als semesterspezifische Instanzen) sind einem Block/Modul
+zuzuordnen, Ã¼ber den die administrative Einordnung der PrÃ¼fung verwaltet wird.
 Insbesondere ist in diesem Block/Modul ein
-Prüfungs-Organisations-Verantwortlicher (POV) eingetragen, an den sich
-Studenten mit Fragen zur Prüfungsorganisation in dieser administrativen
-Einheit wenden können.  Diese Blöcke/Module sind von der Rolle Prüfungsamt in
-Abstimmung mit den administrativen Einheiten der Fakultät vorab einzurichten
+PrÃ¼fungs-Organisations-Verantwortlicher (POV) eingetragen, an den sich
+Studenten mit Fragen zur PrÃ¼fungsorganisation in dieser administrativen
+Einheit wenden kÃ¶nnen.  Diese BlÃ¶cke/Module sind von der Rolle PrÃ¼fungsamt in
+Abstimmung mit den administrativen Einheiten der FakultÃ¤t vorab einzurichten
 bzw.\ fortzuschreiben.  In der Regel entspricht ein solcher Block einem Modul
-oder einem Bündel zusammenhängender Module. 
+oder einem BÃ¼ndel zusammenhÃ¤ngender Module. 
 
-Ein neuer Block/Modul kann über das Werkzeug \knopf{Erstellen} im Menübaum des
-Reiters \knopf{Prüfungsverwaltung} eingerichtet werden. In den Feldern müssen
+Ein neuer Block/Modul kann Ã¼ber das Werkzeug \knopf{Erstellen} im MenÃ¼baum des
+Reiters \knopf{PrÃ¼fungsverwaltung} eingerichtet werden. In den Feldern mÃ¼ssen
 Sie nun den Namen (der im System einmalig sein muss), die Modulnummer, eine
 kurze Beschreibung des Moduls und den Verantwortlichen angeben. Der Name des
 Verantwortlichen muss ein bereits am System registrierter Loginname sein. Sie
-sollten außerdem darauf achten, dass nur ein dafür zuständiger Benutzer die
-Verantwortlichkeit für ein Modul übernehmen sollte.
+sollten auÃŸerdem darauf achten, dass nur ein dafÃ¼r zustÃ¤ndiger Benutzer die
+Verantwortlichkeit fÃ¼r ein Modul Ã¼bernehmen sollte.
 
-Die Blöcke sollten weitgehend identisch sein mit der in der LV-Planung
-verwendeten Block\-struktur. Als Namen sollten die dortigen Kürzel verwendet
-werden, um über deren Präfix-Struktur die Suche zu erleichtern. 
+Die BlÃ¶cke sollten weitgehend identisch sein mit der in der LV-Planung
+verwendeten Block\-struktur. Als Namen sollten die dortigen KÃ¼rzel verwendet
+werden, um Ã¼ber deren PrÃ¤fix-Struktur die Suche zu erleichtern. 
 
-Jeder Block/Modul bekommt beim Anlegen eine eindeutige unveränderliche
-systeminterne ID zugeordnet, über die Verweise aufgelöst werden.  Die Einträge
-in der Beschreibung eines Blocks können deshalb gefahrlos geändert werden.
-Klicken Sie dazu auf den Link der entsprechenden Zeile der Übersicht.  Es
-öffnet sich wieder das schon bekannte Dialogfenster, in dem nun die
-erforderlichen Änderungen vorgenommen und gespeichert werden können. 
+Jeder Block/Modul bekommt beim Anlegen eine eindeutige unverÃ¤nderliche
+systeminterne ID zugeordnet, Ã¼ber die Verweise aufgelÃ¶st werden.  Die EintrÃ¤ge
+in der Beschreibung eines Blocks kÃ¶nnen deshalb gefahrlos geÃ¤ndert werden.
+Klicken Sie dazu auf den Link der entsprechenden Zeile der Ãœbersicht.  Es
+Ã¶ffnet sich wieder das schon bekannte Dialogfenster, in dem nun die
+erforderlichen Ã„nderungen vorgenommen und gespeichert werden kÃ¶nnen. 
 
-Um Inkonsistenzen zu vermeiden, ist es derzeit ebenfalls nicht möglich, einen
-Block/Modul aus dem System zu entfernen. Markieren Sie obsolete Blöcke mit dem
-Präfix 'Obsolet.'. 
+Um Inkonsistenzen zu vermeiden, ist es derzeit ebenfalls nicht mÃ¶glich, einen
+Block/Modul aus dem System zu entfernen. Markieren Sie obsolete BlÃ¶cke mit dem
+PrÃ¤fix 'Obsolet.'. 
 
-\subsection{Prüfungsergebnisse exportieren}
+\subsection{PrÃ¼fungsergebnisse exportieren}
 
-Um die Ergebnisse einer Prüfung zu exportieren klicken Sie in der
-Prüfungsansicht auf das Symbol \knopf{Tabelle herunterladen}, im folgenden
+Um die Ergebnisse einer PrÃ¼fung zu exportieren klicken Sie in der
+PrÃ¼fungsansicht auf das Symbol \knopf{Tabelle herunterladen}, im folgenden
 Bild gelb markiert.
 
 \bild{.9}{Ergebnis-Exportieren}
 
 OLAT generiert nun eine xls-Datei mit den in der Tabelle vorhandenen Daten und
-bietet diese zum Herunterladen für die Weiterverarbeitung an.  In Wirklichkeit
+bietet diese zum Herunterladen fÃ¼r die Weiterverarbeitung an.  In Wirklichkeit
 handelt es sich um eine tab-separierte Textdatei, die von entsprechenden
 Programmen (Microsoft Excel, OpenOffice) leicht weiterverarbeitet werden kann.
 In OpenOffice ist beim Konvertieren der richtige Zeichensatz sowie die
 richtigen Feldtypen (Text, nicht Standard, um Zahlenwerte korrekt
 darzustellen) einzustellen.
 
-Es besteht die Möglichkeit, die Tabelle vorher anzupassen. Durch Klicken auf
-den im Bild rot markierten Bereich \knopf{Tabelle anpassen} ist es möglich, in
-der Tabelle Spalten hinzuzufügen oder zu entfernen. Entfernte Spalten werden
-beim Export nicht berücksichtigt.
+Es besteht die MÃ¶glichkeit, die Tabelle vorher anzupassen. Durch Klicken auf
+den im Bild rot markierten Bereich \knopf{Tabelle anpassen} ist es mÃ¶glich, in
+der Tabelle Spalten hinzuzufÃ¼gen oder zu entfernen. Entfernte Spalten werden
+beim Export nicht berÃ¼cksichtigt.
 
 \subsection{Elektronische Studentenakte herstellen}
 
-Wenn das Prüfungsamt für einen (am Portal registrierten) Studenten sofort eine
+Wenn das PrÃ¼fungsamt fÃ¼r einen (am Portal registrierten) Studenten sofort eine
 Akte erzeugen muss und nicht darauf warten kann, dass der Student diese selbst
-beantragt, kann dies über das Werkzeug \knopf{Hinzufügen} unter den
-Menüpunkten \knopf{(Nicht) Validierte ESAs} im Reiter
-\knopf{Prüfungsverwaltung} erfolgen. Um den Benutzer zu finden, für den die
-Akte erzeugt werden soll, erscheint nach Betätigung dieses Werkzeugs zunächst
-ein Suchformular. Wurde der Benutzer im System gefunden und ausgewählt, so
-erscheint das reguläre Formular {\em Elektronische Studentenakte beantragen}
-mit den vom ausgewählten Studenten bereits eingetragenen persönlichen Daten.
-Sollten Sie versuchen, eine ESA für einen Studenten anzulegen, der bereits
-über eine ESA verfügt, erscheint eine Fehlermeldung und der Vorgang wird
+beantragt, kann dies Ã¼ber das Werkzeug \knopf{HinzufÃ¼gen} unter den
+MenÃ¼punkten \knopf{(Nicht) Validierte ESAs} im Reiter
+\knopf{PrÃ¼fungsverwaltung} erfolgen. Um den Benutzer zu finden, fÃ¼r den die
+Akte erzeugt werden soll, erscheint nach BetÃ¤tigung dieses Werkzeugs zunÃ¤chst
+ein Suchformular. Wurde der Benutzer im System gefunden und ausgewÃ¤hlt, so
+erscheint das regulÃ¤re Formular {\em Elektronische Studentenakte beantragen}
+mit den vom ausgewÃ¤hlten Studenten bereits eingetragenen persÃ¶nlichen Daten.
+Sollten Sie versuchen, eine ESA fÃ¼r einen Studenten anzulegen, der bereits
+Ã¼ber eine ESA verfÃ¼gt, erscheint eine Fehlermeldung und der Vorgang wird
 abgebrochen.
 
 \subsection{Elektronische Studentenakte suchen}
 
-Da es möglicherweise durch die Fülle der am PA-Portal angemeldeten Studenten
-unmöglich wird, schnell und effizient eine ESA zu finden, bietet XMan die
-Möglichkeit, nach einer Akte zu suchen. Klicken Sie hierzu auf \knopf{Suchen}
-unter den Menüpunkten \knopf{(Nicht) Validierte ESAs}. Im erscheinenden
-Suchformular können Sie die Kriterien entsprechend Ihrer Suche eintragen. Nach
+Da es mÃ¶glicherweise durch die FÃ¼lle der am PA-Portal angemeldeten Studenten
+unmÃ¶glich wird, schnell und effizient eine ESA zu finden, bietet XMan die
+MÃ¶glichkeit, nach einer Akte zu suchen. Klicken Sie hierzu auf \knopf{Suchen}
+unter den MenÃ¼punkten \knopf{(Nicht) Validierte ESAs}. Im erscheinenden
+Suchformular kÃ¶nnen Sie die Kriterien entsprechend Ihrer Suche eintragen. Nach
 der Auswahl eines gefundenen Benutzers erhalten Sie Einsicht in die jeweilige
-Studentenakte. Sollten Sie einen Benutzer auswählen, für den bis jetzt noch
+Studentenakte. Sollten Sie einen Benutzer auswÃ¤hlen, fÃ¼r den bis jetzt noch
 keine Akte angelegt wurde, erhalten Sie am oberen Bildschirmrand eine kurze
 Information.
 
 \subsection{Elektronische Studentenakte (in)validieren}
 
-Um die von den Studenten beantragten Akten zu validieren, wählen Sie unter dem
-Reiter \knopf{Prüfungsverwaltung} den Menüpunkt \knopf{Nicht Validierte ESAs}.
+Um die von den Studenten beantragten Akten zu validieren, wÃ¤hlen Sie unter dem
+Reiter \knopf{PrÃ¼fungsverwaltung} den MenÃ¼punkt \knopf{Nicht Validierte ESAs}.
 Es wird Ihnen nun eine Tabelle mit allen nicht validierten Akten angezeigt.
-Kontrollieren Sie die eingegebenen Daten auf Ihre Richtigkeit und wählen Sie
-alle zu validierenden Akten mit einem Klick auf jeweilie Kästchen in der
-ersten Spalte aus. Betätigen Sie nun Ihre Auswahl durch Klicken auf
+Kontrollieren Sie die eingegebenen Daten auf Ihre Richtigkeit und wÃ¤hlen Sie
+alle zu validierenden Akten mit einem Klick auf jeweilie KÃ¤stchen in der
+ersten Spalte aus. BetÃ¤tigen Sie nun Ihre Auswahl durch Klicken auf
 \knopf{Validieren}. Die nun von Ihnen validierten ESA erscheinen von ab jetzt
-unter dem Menüpunkt \knopf{Validierte ESAs}.
+unter dem MenÃ¼punkt \knopf{Validierte ESAs}.
 
-Für das Invalidieren von ESAs gehen Sie analog vor. Einziger Unterschied ist,
-dass die Akten unter \knopf{Validierte ESAs} zu suchen sind.  Das Löschen von
-Studentenakten folgt ebenfalls diesem Schema. Allerdings müssen Sie hier, um
-Fehleingaben zu vermeiden, das Löschen der Akte(n) zusätzlich bestätigen.
+FÃ¼r das Invalidieren von ESAs gehen Sie analog vor. Einziger Unterschied ist,
+dass die Akten unter \knopf{Validierte ESAs} zu suchen sind.  Das LÃ¶schen von
+Studentenakten folgt ebenfalls diesem Schema. Allerdings mÃ¼ssen Sie hier, um
+Fehleingaben zu vermeiden, das LÃ¶schen der Akte(n) zusÃ¤tzlich bestÃ¤tigen.
 
 \subsection{Elektronische Studentenakte bearbeiten}
 
 Um eine bestimmte elektronische Studentenakte zu bearbeiten, klicken Sie auf
 die in der Tabelle unter \knopf{Validierte ESAs} angezeigte Matrikelnummer des
-jeweiligen Studenten. Es öffnet sich ein neuer Reiter, der beispielsweise wie
-folgt aussehen könnte:
+jeweiligen Studenten. Es Ã¶ffnet sich ein neuer Reiter, der beispielsweise wie
+folgt aussehen kÃ¶nnte:
 
 \bild{.9}{ESA-Edit}
 
-Sie können hier die Werkzeuge \knopf{Kommentar hinzufügen} und
-\knopf{Krankenschein hinzufügen} verwenden. Ein Kommentar ist in der üblichen
+Sie kÃ¶nnen hier die Werkzeuge \knopf{Kommentar hinzufÃ¼gen} und
+\knopf{Krankenschein hinzufÃ¼gen} verwenden. Ein Kommentar ist in der Ã¼blichen
 Wiki-Syntax formatierbar.
 
-Sollten Sie persönliche Informationen des Studenten wie Vorname, Nachname,
-Matrikelnummer, Emailadresse oder Studiengang ändern wollen, verwenden Sie
+Sollten Sie persÃ¶nliche Informationen des Studenten wie Vorname, Nachname,
+Matrikelnummer, Emailadresse oder Studiengang Ã¤ndern wollen, verwenden Sie
 bitte die vorgegebenen Werkzeuge unter dem Reiter \knopf{Benutzermanagement}
 oder wenden Sie sich an den Administrator des Systems. Wichtig ist hier, dass
 Ihnen am Portal die Rolle Benutzermanager vom Administrator zugewiesen wurde.
 
 \clearpage
-\section{Hilfe für Prüfende}
+\section{Hilfe fÃ¼r PrÃ¼fende}
 
 \subsection{Registration am PA-OLAT-Portal}
 
-Die Registration für Prüfende verläuft auf dieselbe Weise wie im letzten
-Kapitel für die Rolle Prüfungsamt beschrieben.
+Die Registration fÃ¼r PrÃ¼fende verlÃ¤uft auf dieselbe Weise wie im letzten
+Kapitel fÃ¼r die Rolle PrÃ¼fungsamt beschrieben.
 
-\subsection{Prüfung erstellen}
+\subsection{PrÃ¼fung erstellen}
 
-Um eine Prüfung zu erzeugen, verwenden sie das Werkzeug \knopf{Prüfung
-  herstellen} im Reiter \knopf{Prüfungen}. Nach Klicken auf dieses Werkzeug
-folgt der erste Schritt der Erstellung einer Prüfung mit der Auswahl des
-Prüfungstyps und der Block/Modul-Zugehörigkeit. Diese beiden Einstellungen
+Um eine PrÃ¼fung zu erzeugen, verwenden sie das Werkzeug \knopf{PrÃ¼fung
+  herstellen} im Reiter \knopf{PrÃ¼fungen}. Nach Klicken auf dieses Werkzeug
+folgt der erste Schritt der Erstellung einer PrÃ¼fung mit der Auswahl des
+PrÃ¼fungstyps und der Block/Modul-ZugehÃ¶rigkeit. Diese beiden Einstellungen
 werden nur an dieser Stelle konfiguriert und sind (derzeit) im weiteren
-Lebenszyklus einer Prüfung nicht mehr änderbar. Sie erhalten ein
-Eingabeformular, das ungefähr so aussieht:
+Lebenszyklus einer PrÃ¼fung nicht mehr Ã¤nderbar. Sie erhalten ein
+Eingabeformular, das ungefÃ¤hr so aussieht:
 
 \bild{.9}{Pruefung-Erzeugen-Typ}
 
-Für den Prüfungstyp {\em Mündlich} können Sie im späteren Verlauf beliebig
-viele Termine zu der Prüfung hinzufügen. Zu jedem solchen Termin kann sich
-jeweils genau ein Student einschreiben.  Für den Prüfungstyp {\em Schriftlich}
-wird später lediglich ein Termin erzeugt.
+FÃ¼r den PrÃ¼fungstyp {\em MÃ¼ndlich} kÃ¶nnen Sie im spÃ¤teren Verlauf beliebig
+viele Termine zu der PrÃ¼fung hinzufÃ¼gen. Zu jedem solchen Termin kann sich
+jeweils genau ein Student einschreiben.  FÃ¼r den PrÃ¼fungstyp {\em Schriftlich}
+wird spÃ¤ter lediglich ein Termin erzeugt.
 
-Falls Ihr gewünschter Block/Modul in der Aufzählung nicht vorkommt, wenden Sie
-sich vorab an die Rolle Prüfungsamt, um einen entsprechenden Eintrag (samt
+Falls Ihr gewÃ¼nschter Block/Modul in der AufzÃ¤hlung nicht vorkommt, wenden Sie
+sich vorab an die Rolle PrÃ¼fungsamt, um einen entsprechenden Eintrag (samt
 Verantwortlichem) anlegen zu lassen.
 
-Im Weiteren werden sie aufgefordert, den Namen der Prüfung sowie eine kurze
-Beschreibung einzugeben. Sie können die Beschreibung hier sehr kurz halten, da
-eine detailliertere Beschreibung der Prüfung in einem späteren Schritt
-abgefragt wird. Halten sie sich aber bei dem Namen der Prüfung an die vom
-Prüfungsamt vorgegebene Namenskonvention. 
+Im Weiteren werden sie aufgefordert, den Namen der PrÃ¼fung sowie eine kurze
+Beschreibung einzugeben. Sie kÃ¶nnen die Beschreibung hier sehr kurz halten, da
+eine detailliertere Beschreibung der PrÃ¼fung in einem spÃ¤teren Schritt
+abgefragt wird. Halten sie sich aber bei dem Namen der PrÃ¼fung an die vom
+PrÃ¼fungsamt vorgegebene Namenskonvention. 
 
-Starten Sie im nächsten Schritt den Editor, um die Prüfung genauer zu
+Starten Sie im nÃ¤chsten Schritt den Editor, um die PrÃ¼fung genauer zu
 definieren.
 
 \bild{.9}{Pruefung-Erzeugen-Editor}
 
-Der Prüfungseditor öffnet sich wie oben beschrieben in einem neuen Reiter mit
-dem Prüfungsnamen als Titel. Im linken Menübaum wird Ihnen zusätzlich noch der
-Prüfungstyp \knopf{Mündlich/Schriftlich} angezeigt. Sie können auch jederzeit
-das Werkzeug \knopf{Vorschau} verwenden, um die Prüfung in der späteren
+Der PrÃ¼fungseditor Ã¶ffnet sich wie oben beschrieben in einem neuen Reiter mit
+dem PrÃ¼fungsnamen als Titel. Im linken MenÃ¼baum wird Ihnen zusÃ¤tzlich noch der
+PrÃ¼fungstyp \knopf{MÃ¼ndlich/Schriftlich} angezeigt. Sie kÃ¶nnen auch jederzeit
+das Werkzeug \knopf{Vorschau} verwenden, um die PrÃ¼fung in der spÃ¤teren
 Ansicht zu sehen.
 
-Sie können nun im ersten Reiter die Prüfungskommentare wie mitzubringende
-Unterlagen oder vorzubereitende Prüfungsthemen eintragen. Um die Änderungen
-dauerhaft zu machen, bestätigen Sie bitte mit \knopf{Speichern}. Unter
-\knopf{Einschreibung} können sie den Einschreibe- und Ausschreibezeitraum
+Sie kÃ¶nnen nun im ersten Reiter die PrÃ¼fungskommentare wie mitzubringende
+Unterlagen oder vorzubereitende PrÃ¼fungsthemen eintragen. Um die Ã„nderungen
+dauerhaft zu machen, bestÃ¤tigen Sie bitte mit \knopf{Speichern}. Unter
+\knopf{Einschreibung} kÃ¶nnen sie den Einschreibe- und Ausschreibezeitraum
 festlegen. Hier ist darauf zu achten, dass der Beginn des Einschreibezeitraums
-zeitlich vor den beiden Terminen für An- und Abmeldeschluss liegt.
+zeitlich vor den beiden Terminen fÃ¼r An- und Abmeldeschluss liegt.
 
-Nach der Bestätigung mit \knopf{Speichern} erscheint ein neuer Reiter
-\knopf{Termin(e)}. Hier wird der Prüfung der eigentliche Termin zugeordnet.
-Die beiden Prüfungstypen {\em Mündlich/Schriftlich} teilen sich die Attribute
-Datum, welches über einen Datumsauswahldialog gewählt wird, Ort und die Dauer
-in Minuten der Prüfung. Sollten Sie den Prüfungstyp {\em Mündlich} gewählt
-haben, stehen Ihnen noch zwei weitere Attribute zur Verfügung. Das System
+Nach der BestÃ¤tigung mit \knopf{Speichern} erscheint ein neuer Reiter
+\knopf{Termin(e)}. Hier wird der PrÃ¼fung der eigentliche Termin zugeordnet.
+Die beiden PrÃ¼fungstypen {\em MÃ¼ndlich/Schriftlich} teilen sich die Attribute
+Datum, welches Ã¼ber einen Datumsauswahldialog gewÃ¤hlt wird, Ort und die Dauer
+in Minuten der PrÃ¼fung. Sollten Sie den PrÃ¼fungstyp {\em MÃ¼ndlich} gewÃ¤hlt
+haben, stehen Ihnen noch zwei weitere Attribute zur VerfÃ¼gung. Das System
 erzeugt dann die bei {\em Anzahl} angegebene Zahl von konsekutiven Terminen
-entsprechend den Angaben bei {\em Pause} und {\em Dauer}.  Sie können auf
-diese Weise mehrfach Termine erzeugen und später auch erzeugte Termine wieder
-löschen.  Bei der Wahl der Termine sollten Sie vorab mglw.\ Rücksprache mit
-dem Prüfungsamt halten, um eventuelle terminliche Kollisionen mit anderen
-Prüfungen zu vermeiden.
+entsprechend den Angaben bei {\em Pause} und {\em Dauer}.  Sie kÃ¶nnen auf
+diese Weise mehrfach Termine erzeugen und spÃ¤ter auch erzeugte Termine wieder
+lÃ¶schen.  Bei der Wahl der Termine sollten Sie vorab mglw.\ RÃ¼cksprache mit
+dem PrÃ¼fungsamt halten, um eventuelle terminliche Kollisionen mit anderen
+PrÃ¼fungen zu vermeiden.
 
-Unter dem Reiter \knopf{Vormerken} können Sie einstellen, ob Studenten mit
-Ihrer Anmeldung für die Prüfung nur vorgemerkt oder bereits verbindlich
-registriert werden.  Der Vormerkemodus ist besonders für die Fälle vorgesehen,
-wenn vorab spezielle Zulassungsvoraussetzungen zu prüfen sind oder Sie nach
-Anmeldeschluss Lücken in Ihrem Prüfungsplan durch zeitliche Verschiebung von
-Prüfungen zu schließen beabsichtigen.  
+Unter dem Reiter \knopf{Vormerken} kÃ¶nnen Sie einstellen, ob Studenten mit
+Ihrer Anmeldung fÃ¼r die PrÃ¼fung nur vorgemerkt oder bereits verbindlich
+registriert werden.  Der Vormerkemodus ist besonders fÃ¼r die FÃ¤lle vorgesehen,
+wenn vorab spezielle Zulassungsvoraussetzungen zu prÃ¼fen sind oder Sie nach
+Anmeldeschluss LÃ¼cken in Ihrem PrÃ¼fungsplan durch zeitliche Verschiebung von
+PrÃ¼fungen zu schlieÃŸen beabsichtigen.  
 
-Im Vormerkemodus werden die Prüfungskandidaten zunächst in eine temporäre
-Liste aufgenommen. Sie als Prüfer entscheiden später für jeden einzelnen
-Teilnehmer, ob er in die Liste der zugelassenen Studenten übertragen wird.
-Öffnen Sie dazu den Reiter dieser Prüfung, wählen Sie die zu registrierenden
-Kandidaten in der {\em Vorgemerkt}-Liste über das Wahl-Kästchen aus und führen
+Im Vormerkemodus werden die PrÃ¼fungskandidaten zunÃ¤chst in eine temporÃ¤re
+Liste aufgenommen. Sie als PrÃ¼fer entscheiden spÃ¤ter fÃ¼r jeden einzelnen
+Teilnehmer, ob er in die Liste der zugelassenen Studenten Ã¼bertragen wird.
+Ã–ffnen Sie dazu den Reiter dieser PrÃ¼fung, wÃ¤hlen Sie die zu registrierenden
+Kandidaten in der {\em Vorgemerkt}-Liste Ã¼ber das Wahl-KÃ¤stchen aus und fÃ¼hren
 Sie die Aktion \knopf{Registrieren} aus. Die Registration kann wieder
-rückgängig gemacht werden, indem Sie Studenten in der {\em Registriert}-Liste
-auswählen und die Aktion \knopf{Vormerken} ausführen.
+rÃ¼ckgÃ¤ngig gemacht werden, indem Sie Studenten in der {\em Registriert}-Liste
+auswÃ¤hlen und die Aktion \knopf{Vormerken} ausfÃ¼hren.
 
-Im Reiter \knopf{Katalog} können Sie Ihre Prüfung in den Prüfungskatalog
-eintragen und damit einem bestimmten Prüfungszeitraum zuordnen.  Sollte der
-gewünschte Zeitraum nicht im Katalog vorhanden sein, wenden sie sich bitte an
-die Rolle Prüfungsamt.
+Im Reiter \knopf{Katalog} kÃ¶nnen Sie Ihre PrÃ¼fung in den PrÃ¼fungskatalog
+eintragen und damit einem bestimmten PrÃ¼fungszeitraum zuordnen.  Sollte der
+gewÃ¼nschte Zeitraum nicht im Katalog vorhanden sein, wenden sie sich bitte an
+die Rolle PrÃ¼fungsamt.
 
-Nachdem die Prüfung vollständig angelegt wurde, {\bf muss die Sichtbarkeit der
-  Prüfung noch geändert werden}. Starten Sie dafür die \knopf{Detailansicht}
-der Prüfung und wählen Sie das am rechten Bildschirmrand erscheinende Werkzeug
-\knopf{Einstellung ändern} aus. Unter \knopf{Zugriff haben:} müssen Sie die
-Prüfung für {\em Alle registrierten OLAT-Benutzer} frei geben.  
+Nachdem die PrÃ¼fung vollstÃ¤ndig angelegt wurde, {\bf muss die Sichtbarkeit der
+  PrÃ¼fung noch geÃ¤ndert werden}. Starten Sie dafÃ¼r die \knopf{Detailansicht}
+der PrÃ¼fung und wÃ¤hlen Sie das am rechten Bildschirmrand erscheinende Werkzeug
+\knopf{Einstellung Ã¤ndern} aus. Unter \knopf{Zugriff haben:} mÃ¼ssen Sie die
+PrÃ¼fung fÃ¼r {\em Alle registrierten OLAT-Benutzer} frei geben.  
 
-Ihre Prüfung steht jetzt den Prüflingen zur Einschreibung zur Verfügung.
+Ihre PrÃ¼fung steht jetzt den PrÃ¼flingen zur Einschreibung zur VerfÃ¼gung.
 
-\subsection{Kontakt mit Prüfling aufnehmen}
+\subsection{Kontakt mit PrÃ¼fling aufnehmen}
 
-Um Kontakt mit einem Prüfling aufzunehmen, klicken sie entweder in der Liste
+Um Kontakt mit einem PrÃ¼fling aufzunehmen, klicken sie entweder in der Liste
 der {\em registrierten} oder der {\em vorgemerkten} Kandidaten auf den
-Loginnamen des entsprechenden Studenten. Es öffnet sich die
+Loginnamen des entsprechenden Studenten. Es Ã¶ffnet sich die
 \knopf{Visitenkarte} des Studenten in einem neuen Reiter. Unter
-\knopf{Kontakt} haben Sie die Möglichkeit, dem Teilnehmer eine Email zu
+\knopf{Kontakt} haben Sie die MÃ¶glichkeit, dem Teilnehmer eine Email zu
 schicken.
 
 \subsection{Noten und Kommentare eintragen}
 
-Um die Noten der Teilnehmer einzutragen, wählen sie in der Liste der {\em
+Um die Noten der Teilnehmer einzutragen, wÃ¤hlen sie in der Liste der {\em
   registrierten} Teilnehmer den oder die entsprechenden Student(en) mit einem
-Klick auf das Auswahl-Kästchen aus und führen die Aktion \knopf{Noten
-  eintragen} aus. Alle in einem Vorgang ausgewählten Studenten erhalten die
+Klick auf das Auswahl-KÃ¤stchen aus und fÃ¼hren die Aktion \knopf{Noten
+  eintragen} aus. Alle in einem Vorgang ausgewÃ¤hlten Studenten erhalten die
 gleiche Note.
 
-Um zu einem Studenten einen Kommentar einzutragen, wählen Sie den Studenten
-wie gewohnt über das Wahl-Kästchen aus und führen die Aktion \knopf{Kommentar
-  hinzufügen} aus, falls der Student noch keinen Kommentar besitzt, oder
+Um zu einem Studenten einen Kommentar einzutragen, wÃ¤hlen Sie den Studenten
+wie gewohnt Ã¼ber das Wahl-KÃ¤stchen aus und fÃ¼hren die Aktion \knopf{Kommentar
+  hinzufÃ¼gen} aus, falls der Student noch keinen Kommentar besitzt, oder
 \knopf{Kommentar editieren}, wenn bereits ein Kommentar vorhanden ist.
 
 \subsection{Studenten nachtragen und entfernen}
 
 Falls ein am Portal registrierter Student den festgelegten Anmeldeschluss
-verpasst hat oder aus anderen Gründen für die Prüfung nicht registriert ist,
-können Sie diesen (auch nach Anmeldeschluss und sogar nach Ablauf der Prüfung)
-manuell nachtragen. Wählen Sie dazu in der Prüfungsansicht \knopf{Nachtragen}
-aus. Es öffnet sich ein Nutzersuchformular, in dem Sie nach dem
-nachzutragenden Studenten suchen und ihn auswählen können. Achten Sie darauf,
+verpasst hat oder aus anderen GrÃ¼nden fÃ¼r die PrÃ¼fung nicht registriert ist,
+kÃ¶nnen Sie diesen (auch nach Anmeldeschluss und sogar nach Ablauf der PrÃ¼fung)
+manuell nachtragen. WÃ¤hlen Sie dazu in der PrÃ¼fungsansicht \knopf{Nachtragen}
+aus. Es Ã¶ffnet sich ein Nutzersuchformular, in dem Sie nach dem
+nachzutragenden Studenten suchen und ihn auswÃ¤hlen kÃ¶nnen. Achten Sie darauf,
 dass der Student bereits eine validierte elektronische Studentenakte
 besitzt. Sollte dies nicht der Fall sein, wird eine kurze Information am
 oberen Bildschirmrand angezeigt.
 
-Um einen bereits angemeldeten oder vorgemerkten Studenten abzumelden, wählen
-Sie ihn wie gewohnt in der entsprechenden Liste aus und führen die Aktion
+Um einen bereits angemeldeten oder vorgemerkten Studenten abzumelden, wÃ¤hlen
+Sie ihn wie gewohnt in der entsprechenden Liste aus und fÃ¼hren die Aktion
 \knopf{Austragen} aus.
 
 \end{document}

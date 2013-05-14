@@ -51,10 +51,8 @@ grundlegende Fragen wie Registration an der Plattform und Beantragung der
 elektronischen Studentenakte sowie die Einschreibung zu Prüfungen beschrieben.
 
 Das zweite Kapitel widmet sich der Darstellung der Portalfunktionen {\em aus
-Sicht des Prüfungsamt}. Es wird hier insbesondere darauf eingegangen,
-wie Blöcke/Module und Studiengänge im System bereitgestellt werden.  Weiter
-wird die Verwaltung der elektronischen Studentenakte aus Sicht der Rolle
-Prüfungsamt erläutert.
+Sicht des Prüfungsamt}. Es wird hier darauf eingegangen,
+wie Studiengänge und elektronischen Studentenakte verwaltet werden.
 
 Das letzte Kapitel des Handbuchs stellt die von {\em Prüfern}
 nutzbare Funktionalität zur Erstellung und Verwaltung von Prüfungen vor.
@@ -200,41 +198,6 @@ Studienganges zu ändern.
 Um Inkonsistenzen in Studentenakten zu vermeiden, ist es derzeit nicht
 möglich, einen Studiengang aus dem System zu entfernen.
 
-\subsection{Block/Modul erstellen}
-
-Prüfungen (als semesterspezifische Instanzen) sind einem Block/Modul
-zuzuordnen, über den die administrative Einordnung der Prüfung verwaltet wird.
-Insbesondere ist in diesem Block/Modul ein
-Prüfungs-Organisations-Verantwortlicher (POV) eingetragen, an den sich
-Studenten mit Fragen zur Prüfungsorganisation in dieser administrativen
-Einheit wenden können.  Diese Blöcke/Module sind von der Rolle Prüfungsamt in
-Abstimmung mit den administrativen Einheiten der Fakultät vorab einzurichten
-bzw.\ fortzuschreiben.  In der Regel entspricht ein solcher Block einem Modul
-oder einem Bündel zusammenhängender Module. 
-
-Ein neuer Block/Modul kann über das Werkzeug \knopf{Erstellen} im Menübaum des
-Reiters \knopf{Prüfungsverwaltung} eingerichtet werden. In den Feldern müssen
-Sie nun den Namen (der im System einmalig sein muss), die Modulnummer, eine
-kurze Beschreibung des Moduls und den Verantwortlichen angeben. Der Name des
-Verantwortlichen muss ein bereits am System registrierter Loginname sein. Sie
-sollten außerdem darauf achten, dass nur ein dafür zuständiger Benutzer die
-Verantwortlichkeit für ein Modul übernehmen sollte.
-
-Die Blöcke sollten weitgehend identisch sein mit der in der LV-Planung
-verwendeten Block\-struktur. Als Namen sollten die dortigen Kürzel verwendet
-werden, um über deren Präfix-Struktur die Suche zu erleichtern. 
-
-Jeder Block/Modul bekommt beim Anlegen eine eindeutige unveränderliche
-systeminterne ID zugeordnet, über die Verweise aufgelöst werden.  Die Einträge
-in der Beschreibung eines Blocks können deshalb gefahrlos geändert werden.
-Klicken Sie dazu auf den Link der entsprechenden Zeile der Übersicht.  Es
-öffnet sich wieder das schon bekannte Dialogfenster, in dem nun die
-erforderlichen Änderungen vorgenommen und gespeichert werden können. 
-
-Um Inkonsistenzen zu vermeiden, ist es derzeit ebenfalls nicht möglich, einen
-Block/Modul aus dem System zu entfernen. Markieren Sie obsolete Blöcke mit dem
-Präfix 'Obsolet.'. 
-
 \subsection{Prüfungsergebnisse exportieren}
 
 Um die Ergebnisse einer Prüfung zu exportieren klicken Sie in der
@@ -330,10 +293,7 @@ Kapitel für die Rolle Prüfungsamt beschrieben.
 Um eine Prüfung zu erzeugen, verwenden sie das Werkzeug \knopf{Prüfung
   herstellen} im Reiter \knopf{Prüfungen}. Nach Klicken auf dieses Werkzeug
 folgt der erste Schritt der Erstellung einer Prüfung mit der Auswahl des
-Prüfungstyps und der Block/Modul-Zugehörigkeit. Diese beiden Einstellungen
-werden nur an dieser Stelle konfiguriert und sind (derzeit) im weiteren
-Lebenszyklus einer Prüfung nicht mehr änderbar. Sie erhalten ein
-Eingabeformular, das ungefähr so aussieht:
+Prüfungstyps. Dies Einstellungen kann später nicht mehr geändert werden.
 
 \bild{.9}{Pruefung-Erzeugen-Typ}
 
@@ -341,10 +301,6 @@ Für den Prüfungstyp {\em Mündlich} können Sie im späteren Verlauf beliebig
 viele Termine zu der Prüfung hinzufügen. Zu jedem solchen Termin kann sich
 jeweils genau ein Student einschreiben.  Für den Prüfungstyp {\em Schriftlich}
 wird später lediglich ein Termin erzeugt.
-
-Falls Ihr gewünschter Block/Modul in der Aufzählung nicht vorkommt, wenden Sie
-sich vorab an die Rolle Prüfungsamt, um einen entsprechenden Eintrag (samt
-Verantwortlichem) anlegen zu lassen.
 
 Im Weiteren werden sie aufgefordert, den Namen der Prüfung sowie eine kurze
 Beschreibung einzugeben. Sie können die Beschreibung hier sehr kurz halten, da

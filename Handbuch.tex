@@ -21,6 +21,7 @@
 \newcommand{\knopf}[1]{{\sc #1}}
 
 \author{Daniel Gerber, Hans-Gert Gräbe\\ 
+Klemens Schölhorn, Oliver Swoboda, Robert Seidler\\
 Institut für Informatik, Universität Leipzig}
 
 \title{Die OLAT-Erweiterung Xman-- Handbuch}
@@ -88,14 +89,14 @@ erstellen, in der die relevanten operativen Informationen zum
 Prüfungsgeschehen gespeichert sind. 
 
 Dazu klicken Sie unter \knopf{Home $>$ Meine Studentenakte} auf den Button
-\knopf{Beantragen}.
+\knopf{Erstellen}.
 
-\bild{.95}{ESA-Beantragen}
+\bild{1}{ESA-Erstellen}
 
 Füllen Sie die noch offenen Felder des erscheinenden Formulars aus und
 kontrollieren Sie die Richtigkeit der Angaben.
 
-\bild{.7}{ESA-Eingaben}
+\bild{1}{ESA-Eingaben}
 
 Als {\em Login} und {\em E-Mail-Adresse} werden Ihre Studserv-Daten verwendet.
 Diese können nicht geändert werden. Beachten Sie, dass Ihre {\em Matrikelnummer}
@@ -126,7 +127,7 @@ Nachdem Sie im Reiter \knopf{Lernressourcen} die gewünschte Prüfung über den
 Katalog, die Suchmaske oder über die Liste aller Prüfungen gefunden und
 gestartet haben, erhalten sie eine Übersicht folgender Art:
 
-\bild{.9}{Pruefung-Einschreiben}
+\bild{1}{Pruefung-Einschreiben}
 
 Handelt es sich bei der gewählten Prüfung um eine mündliche Prüfung, wird
 Ihnen -- wie im Bild dargestellt -- eine Liste mit noch offenen Terminen
@@ -146,7 +147,7 @@ erhalten Sie eine Benachrichtigungsemail. Ab diesem Zeitpunkt können Sie
 das Ergebnis Ihrer Prüfung in Ihrer Studentenakte einsehen.  Ihre Studentenakte hat etwa
 das folgende Aussehen:
 
-\bild{.9}{ESA-Ansicht}
+\bild{1}{ESA-Ansicht}
 
 \clearpage
 \section{Hilfe für das Studienbüro}
@@ -172,7 +173,7 @@ Um die Ergebnisse einer Prüfung zu exportieren klicken Sie in der
 Prüfungsansicht auf das Symbol \knopf{Tabelle herunterladen}, im folgenden
 Bild gelb markiert.
 
-\bild{.9}{Ergebnis-Exportieren}
+\bild{1}{Ergebnis-Exportieren}
 
 OLAT generiert nun eine xls-Datei mit den in der Tabelle vorhandenen Daten und
 bietet diese zum Herunterladen für die Weiterverarbeitung an.  In Wirklichkeit
@@ -199,7 +200,7 @@ Um eine bestimmte Studentenakte zu bearbeiten, klicken Sie auf
 die in der Tabelle angezeigte Matrikelnummer des jeweiligen Studierenden.
 Es öffnet sich ein neuer Reiter mit der gewählten Studentenakte:
 
-\bild{.9}{ESA-Edit}
+\bild{1}{ESA-Edit}
 
 Sie können hier einen \knopf{Kommentar hinzufügen}. Ein Kommentar ist in der
 üblichen Wiki-Syntax formatierbar.
@@ -225,11 +226,11 @@ Um eine Prüfung zu erzeugen, verwenden sie das Werkzeug \knopf{Prüfung
 folgt der erste Schritt der Erstellung einer Prüfung mit der Auswahl des
 Prüfungstyps. Dies Einstellungen kann später nicht mehr geändert werden.
 
-\bild{.9}{Pruefung-Erzeugen-Typ}
+\bild{1}{Pruefung-Erzeugen-Typ}
 
-Für den Prüfungstyp {\em Mündlich} können Sie im späteren Verlauf beliebig
+Für den Prüfungstyp {\em mündlich} können Sie im späteren Verlauf beliebig
 viele Termine zu der Prüfung hinzufügen. Zu jedem solchen Termin kann sich
-jeweils genau ein Student einschreiben.  Für den Prüfungstyp {\em Schriftlich}
+jeweils genau ein Student einschreiben.  Für den Prüfungstyp {\em schriftlich}
 wird später lediglich ein Termin erzeugt.
 
 Im Weiteren werden sie aufgefordert, den Namen der Prüfung sowie eine kurze
@@ -241,26 +242,23 @@ Studienbüro vorgegebene Namenskonvention.
 Starten Sie im nächsten Schritt den Editor, um die Prüfung genauer zu
 definieren.
 
-\bild{.9}{Pruefung-Erzeugen-Editor}
+\bild{1}{Pruefung-Erzeugen-Editor}
 
 Der Prüfungseditor öffnet sich wie oben beschrieben in einem neuen Reiter mit
-dem Prüfungsnamen als Titel. Im linken Menübaum wird Ihnen zusätzlich noch der
-Prüfungstyp \knopf{Mündlich/Schriftlich} angezeigt. Sie können auch jederzeit
-das Werkzeug \knopf{Vorschau} verwenden, um die Prüfung in der späteren
-Ansicht zu sehen.
+dem Prüfungsnamen als Titel. Zusätzlich wird Ihnen der Titel mit dem Prüfungstyp ({\em mündlich/schriftlich}) in der \knopf{Brotkrumennavigation} (rote Markierung) angezeigt. Sie können jederzeit diese \knopf{Navigation} verwenden, um die Prüfung in der späteren Ansicht zu sehen. 
 
 Sie können nun im ersten Reiter die Prüfungskommentare wie mitzubringende
 Unterlagen oder vorzubereitende Prüfungsthemen eintragen. Um die Änderungen
 dauerhaft zu machen, bestätigen Sie bitte mit \knopf{Speichern}. Unter
-\knopf{Einschreibung} können sie den Einschreibe- und Ausschreibezeitraum
-festlegen. Hier ist darauf zu achten, dass der Beginn des Einschreibezeitraums
+\knopf{Einschreibung} können sie den Anmelde- und Abmeldezeitraum
+festlegen. Hier ist darauf zu achten, dass der Beginn des Anmeldezeitraums
 zeitlich vor den beiden Terminen für An- und Abmeldeschluss liegt.
 
 Nach der Bestätigung mit \knopf{Speichern} erscheint ein neuer Reiter
 \knopf{Termin(e)}. Hier wird der Prüfung der eigentliche Termin zugeordnet.
-Die beiden Prüfungstypen {\em Mündlich/Schriftlich} teilen sich die Attribute
+Die beiden Prüfungstypen {\em mündlich/schriftlich} teilen sich die Attribute
 Datum, welches über einen Datumsauswahldialog gewählt wird, Ort und die Dauer
-in Minuten der Prüfung. Sollten Sie den Prüfungstyp {\em Mündlich} gewählt
+in Minuten der Prüfung. Sollten Sie den Prüfungstyp {\em mündlich} gewählt
 haben, stehen Ihnen noch zwei weitere Attribute zur Verfügung. Das System
 erzeugt dann die bei {\em Anzahl} angegebene Zahl von konsekutiven Terminen
 entsprechend den Angaben bei {\em Pause} und {\em Dauer}.  Sie können auf
@@ -276,61 +274,59 @@ wenn vorab spezielle Zulassungsvoraussetzungen zu prüfen sind oder Sie nach
 Anmeldeschluss Lücken in Ihrem Prüfungsplan durch zeitliche Verschiebung von
 Prüfungen zu schließen beabsichtigen.  
 
-Im Vormerkemodus werden die Studentinnen und Studenten zunächst in eine temporäre
-Liste aufgenommen. Sie entscheiden dann später für jeden einzeln,
-ob er in die Liste der zugelassenen Prüflinge übertragen wird.
+Im Vormerkemodus bekommen die Studentinnen und Studenten zunächst den Status {\em Vorgemerkt}. Sie entscheiden dann später für jeden Studierenden einzeln,
+ob dieser den Status {\em Registriert} bekommt und somit zu den zugelassenen Prüflingen gehört.
 Öffnen Sie dazu den Reiter dieser Prüfung, wählen Sie die zu registrierenden
-Studentinnen und Studenten in der {\em Vorgemerkt}-Liste über das Wahl-Kästchen aus und führen
-Sie die Aktion \knopf{Registrieren} aus. Die Registrierung kann auf die gleiche
-Weise wieder rückgängig gemacht werden.
+Studentinnen und Studenten über das Wahl-Kästchen aus und führen
+Sie die Aktion \knopf{Registrieren} aus. Die Registrierung kann über die Aktion \knopf{Vormerken} wieder rückgängig gemacht werden.
+
+Unter dem Reiter \knopf{Mehrfacheinschreibung} können Sie einstellen, ob Studierende sich zu mehreren Prüfungsterminen anmelden können. Die {\em Mehrfacheinschreibung} ist nur für {\em mündliche} Prüfungen möglich.
 
 Im Reiter \knopf{Katalog} können Sie Ihre Prüfung in den Prüfungskatalog
-eintragen und damit einem bestimmten Prüfungszeitraum zuordnen.  Sollte der
+eintragen und damit einem bestimmten Prüfungszeitraum zuordnen. Sollte der
 gewünschte Zeitraum nicht im Katalog vorhanden sein, wenden sie sich bitte an
-die Rolle Studienbüro.
+das Studienbüro.
 
 Nachdem die Prüfung vollständig angelegt wurde, {\bf muss die Sichtbarkeit der
   Prüfung noch geändert werden}. Starten Sie dafür die \knopf{Detailansicht}
 der Prüfung und wählen Sie das am rechten Bildschirmrand erscheinende Werkzeug
-\knopf{Einstellung ändern} aus. Unter \knopf{Zugriff haben:} müssen Sie die
-Prüfung für {\em Alle registrierten OLAT-Benutzer} frei geben.  
+\knopf{Einstellungen ändern} aus. Unter \knopf{Zugriff haben:} müssen Sie die
+Prüfung für {\em Alle registrierten OLAT-Benutzer} freigeben.  
 
 Ihre Prüfung steht jetzt den Prüflingen zur Einschreibung zur Verfügung.
 
+\subsection{Prüfung abschließen}
+
+Um eine Prüfung abzuschließen, wählen Sie die Aktion \knopf{Prüfung abschließen} im Prüfungseditor. Nach dem Abschließen einer Prüfung sind keine Änderungen an dieser mehr möglich. Diese Funktion können Sie nutzen, wenn Ihre Prüfung beendet und alle Ergebnisse eingetragen wurden.
+
 \subsection{Kontakt mit Prüfling aufnehmen}
 
-Um Kontakt mit einem Prüfling aufzunehmen, klicken sie entweder in der Liste
-der {\em registrierten} oder der {\em vorgemerkten} Kandidaten auf den
-Loginnamen der oder des entsprechenden Studierenden. Es öffnet sich die
-entsprechende \knopf{Visitenkarte} in einem neuen Reiter. Unter
-\knopf{Kontakt} haben Sie die Möglichkeit, dem Prüfling eine E-Mail zu
-schicken.
+Um Kontakt mit einem Prüfling aufzunehmen, wählen Sie in der Liste der {\em registrierten} bzw. {\em vorgemerkten} Studierenden über das Wahl-Kästchen diejenigen aus, denen Sie eine E-Mail senden wollen und führen Sie die Aktion \knopf{E-Mail senden} aus.
 
 \subsection{Noten und Kommentare eintragen}
 
 Um die Noten der Prüflinge einzutragen, wählen sie in der Liste der {\em
   registrierten} Prüflinge die entsprechenden Studenten mit einem
-Klick auf das Auswahl-Kästchen aus und führen die Aktion \knopf{Noten
+Klick auf das Wahl-Kästchen aus und führen die Aktion \knopf{Noten
   eintragen} aus. Alle in einem Vorgang ausgewählten Studierenden erhalten die
 gleiche Note.
 
-Um zu einem Prüfling einen Kommentar einzutragen, wählen Sie diesen
-wie gewohnt über das Wahl-Kästchen aus und führen die Aktion \knopf{Kommentar
-  hinzufügen} aus, falls der Student noch keinen Kommentar besitzt, oder
-\knopf{Kommentar editieren}, wenn bereits ein Kommentar vorhanden ist.
+Um zu Prüflingen einen Kommentar einzutragen, wählen Sie diese
+wie gewohnt über das Wahl-Kästchen aus und führen die Aktion \knopf{Kommentare
+  eintragen} aus. Ist bei einem Prüfling schon ein Kommentar vorhanden, wird dieser durch das neue Kommentar ersetzt.
 
 \subsection{Prüflinge nachtragen und entfernen}
 
 Falls eine am Portal registrierte Studentin oder ein Student den festgelegten Anmeldeschluss
 verpasst hat oder aus anderen Gründen für die Prüfung nicht registriert ist,
 können diese (auch nach Anmeldeschluss und sogar nach Ablauf der Prüfung)
-manuell nachgetragen werden. Wählen Sie dazu in der Prüfungsansicht \knopf{Nachtragen}
+manuell nachgetragen werden. Wählen Sie dazu in der Prüfungsansicht \knopf{Nachtragen} bzw. \knopf{Teilnehmer nachtragen}
 aus. Es öffnet sich ein Nutzersuchformular, in dem Sie nach dem
 nachzutragenden Prüfling suchen und ihn auswählen können. Falls der Prüfling
-noch keine Studentenakte angelegt hat, wird eine einsprechende
-Fehlermeldung am oberen Bildschirmrand angezeigt.
+noch keine Studentenakte angelegt hat, wird eine entsprechende
+Fehlermeldung  angezeigt.
 
-Um einen bereits angemeldeten oder vorgemerkten Prüfling abzumelden, wählen
+Um einen bereits {\em registrierten} oder {\em vorgemerkten} Prüfling abzumelden, wählen
 Sie ihn wie gewohnt in der entsprechenden Liste aus und führen die Aktion
 \knopf{Austragen} aus.
 

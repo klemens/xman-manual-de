@@ -14,8 +14,8 @@
 \parindent0pt
 \parskip4pt
 
-\newcommand{\bild}[2]{
-    \begin{center}\includegraphics[width=#1\textwidth]{#2}\end{center}
+\newcommand{\bild}[1]{
+    \begin{center}\includegraphics[width=0.95\textwidth]{#1}\end{center}
 }
 
 \newcommand{\knopf}[1]{{\sc #1}}
@@ -25,7 +25,7 @@ Klemens Schölhorn, Oliver Swoboda, Robert Seidler\\
 Institut für Informatik, Universität Leipzig}
 
 \title{Die OpenOLAT-Erweiterung Xman -- Handbuch}
-\date{Überarbeitete Version -- 30.05.2013}
+\date{Überarbeitete Version -- 23.11.2013}
 \begin{document}
 \maketitle
 
@@ -63,8 +63,8 @@ grundlegende Fragen wie die Registrierung an der Plattform und die Beantragung d
 Studentenakte sowie die Einschreibung zu Prüfungen beschrieben.
 
 Das zweite Kapitel widmet sich der Darstellung der Portalfunktionen {\em für
-das Studienbüro}. Es wird hier darauf eingegangen,
-wie Studiengänge und Studentenakten verwaltet werden.
+das Studienbüro}. Es wird hier darauf eingegangen, wie Studiengänge, Studentenakten
+und archivierte Prüfungsprotokolle verwaltet werden.
 
 Das letzte Kapitel des Handbuchs stellt die von {\em Prüfern}
 nutzbare Funktionalität zur Erstellung und Verwaltung von Prüfungen vor.
@@ -90,35 +90,37 @@ Im zweiten Schritt müssen Sie sich eine {\em Studentenakte}
 erstellen, in der die relevanten operativen Informationen zum
 Prüfungsgeschehen gespeichert sind. 
 
-Dazu klicken Sie unter \knopf{Home $>$ Meine Studentenakte} auf den Button
+Dazu klicken Sie unter \knopf{Home $\rightarrow$ Meine Studentenakte} auf den Button
 \knopf{Erstellen}.
 
-\bild{1}{ESA-Erstellen}
+\bild{esf-new}
 
 Füllen Sie die noch offenen Felder des erscheinenden Formulars aus und
 kontrollieren Sie die Richtigkeit der Angaben.
 
-\bild{1}{ESA-Eingaben}
+\bild{esf-new2}
 
-Als {\em Login} und {\em E-Mail-Adresse} werden Ihre Studserv-Daten verwendet.
-Diese können nicht geändert werden. Beachten Sie, dass Ihre {\em Matrikelnummer}
+Als {\em E-Mail-Adresse} wird Ihre Studserv-Adresse verwendet.
+Diese kann nicht geändert werden. Beachten Sie, dass Ihre {\em Matrikelnummer}
 ausschließlich aus Zahlen bestehen darf und nach erstmaliger Eingabe ebenfalls
 nicht mehr geändert werden kann. Wählen Sie Ihren {\em Studiengang}
 aus der Liste der vorgegebenen Einträge.  Falls Ihr Studiengang dort nicht
 angegeben ist, wählen Sie den Studiengang {\em Sonstiges}.
 
-Haben Sie die Studentenakte erfolgreich beantragt, wird diese auf der gleichen
+Haben Sie die Studentenakte erfolgreich angelegt, wird diese auf der gleichen
 Seite direkt angezeigt.
 
 Sie können Ihren Namen und Studiengang jederzeit ändern, z.\,B. beim
 Übergang vom Bacherlor- zum Masterstudiengang, einer Heirat oder ähnlichem.
 
-Sie können Ihre eigene Akte jederzeit über \knopf{Home $>$ Meine Studentenakte}
-einsehen. Beachten Sie, dass das Portal ausschließlich der operativen
+Sie können Ihre eigene Akte jederzeit über \knopf{Home $\rightarrow$ Meine
+Studentenakte} einsehen. Beachten Sie, dass das Portal ausschließlich der operativen
 Unterstützung des Prüfungsgeschehens dient und nur die endgültigen Ergebnisse
 Eingang in Ihre zentral an der Universität geführten Unterlagen finden. Bei
 Unstimmigkeiten zum Inhalt der Studentenakte nehmen Sie bitte Kontakt zum Studienbüro
 auf.
+
+\bild{esf}
 
 \subsection{Einschreibung zu einer Prüfung}
 
@@ -129,26 +131,34 @@ Nachdem Sie im Reiter \knopf{Lernressourcen} die gewünschte Prüfung über den
 Katalog, die Suchmaske oder über die Liste aller Prüfungen gefunden und
 gestartet haben, erhalten sie eine Übersicht folgender Art:
 
-\bild{1}{Pruefung-Einschreiben}
+\bild{student-exam}
 
 Handelt es sich bei der gewählten Prüfung um eine mündliche Prüfung, wird
-Ihnen -- wie im Bild dargestellt -- eine Liste mit noch offenen Terminen
-angeboten.  Dies gilt auch für schriftliche Prüfungen, allerdings gibt es hier
-lediglich einen Termin zur Auswahl. Um sich zu einer Prüfung einzuschreiben,
+Ihnen eine Liste mit noch offenen Terminen angeboten. Bei schriftliche Prüfungen
+steht hier lediglich einen Termin zur Auswahl. Um sich zu einer Prüfung einzuschreiben,
 wählen Sie einen für Sie passenden freien Termin durch Drücken des
-\knopf{Einschreiben}-Buttons. Nach diesem Schritt zeigt Ihnen das System über die
-Spalte \knopf{Status} an, ob Sie erfolgreich registriert wurden. Zusätzlich erhalten Sie
-zur Bestätigung eine Email vom System mit allen relevanten Daten. Außerdem kann der
+\knopf{Einschreiben}-Buttons. Anschließend haben sie die Möglichkeit anzugeben,
+Ihre Einschreibung genauer zu charakterisieren:
+
+\bild{student-exam2}
+
+Nach diesem Schritt zeigt Ihnen das System über die Spalte \knopf{Status} an, ob
+Sie erfolgreich registriert wurden. Zusätzlich erhalten Sie
+zur Bestätigung eine E-Mail vom System mit allen relevanten Daten. Außerdem kann der
 weitere Prüfungsverlauf nun in der eigenen Studentenakte verfolgt werden.
  
 \subsection{Prüfungsergebnisse in der Studentenakte einsehen}
 
 Nachdem die Bewertung Ihrer Prüfungsleistung eingetragen wurde
 erhalten Sie eine Benachrichtigungsmail. Ab diesem Zeitpunkt können Sie
-das Ergebnis Ihrer Prüfung in Ihrer Studentenakte einsehen.  Ihre Studentenakte hat etwa
-das folgende Aussehen:
+das Ergebnis Ihrer Prüfung in Ihrer Studentenakte einsehen.
 
-\bild{1}{ESA-Ansicht}
+\subsection{Archivierte Prüfungsergebnisse}
+
+Nach Abschluss einer Prüfung kann diese vom Prüfer archiviert werden. Danach werden
+die Ergebnisse wird in einer zweiten Tabelle \knopf{Prüfungsarchiv} angezeigt.
+Diese Tabelle ist nur sichtbar, wenn mindestens ein archiviertes Prüfungsprotokoll
+vorliegt.
 
 \clearpage
 \section{Hilfe für das Studienbüro}
@@ -156,25 +166,19 @@ das folgende Aussehen:
 \subsection{Registrierung am OpenOLAT-PA-Portal}
 
 Für die Registrierung am Portal wenden Sie sich bitte an die
-Portaladministration. Diese legt für Sie einen neuen Account an, schaltet die
-erforderlichen Rechte frei und trägt Sie außerdem in die Arbeitsgruppe {\em
-  Prüfer} ein.
+Portaladministration. Diese legt für Sie einen neuen Account an und schaltet die
+erforderlichen Rechte frei.
 
-Über den Reiter \knopf{Gruppen} oder über das Portlet \knopf{Home $>$ Home $>$ Meine
-  Gruppen} können Sie zum Arbeitsbereich dieser Gruppe wechseln, wo
-insbesondere im {\em Forum} und {\em Wiki} aktuelle Informationen zum Betrieb
-des Portals aus Sicht der Prüfer und des Studienbüros zu finden sind.
-
-Über \knopf{Home $>$ Einstellungen} können Sie das Ihnen zugewiesene
+Über \knopf{Home $\rightarrow$ Einstellungen} können Sie das Ihnen zugewiesene
 provisorische Passwort ändern.
 
 \subsection{Prüfungsergebnisse exportieren}
 
 Um die Ergebnisse einer Prüfung zu exportieren klicken Sie in der
 Prüfungsansicht auf das Symbol \knopf{Tabelle herunterladen}, im folgenden
-Bild gelb markiert.
+Bild blau markiert.
 
-\bild{1}{Ergebnis-Exportieren}
+\bild{exam-export}
 
 OpenOLAT generiert nun eine xls-Datei mit den in der Tabelle vorhandenen Daten und
 bietet diese zum Herunterladen für die Weiterverarbeitung an.
@@ -194,10 +198,7 @@ können sie alle vorhandenen Studentenakten einsehen und über
 
 Um eine bestimmte Studentenakte zu bearbeiten, klicken Sie auf
 die in der Tabelle angezeigte Matrikelnummer des jeweiligen Studierenden.
-Es öffnet sich ein neuer Reiter mit der gewählten Studentenakte:
-
-\bild{1}{ESA-Edit}
-
+Es öffnet sich ein neuer Reiter mit der gewählten Studentenakte.
 Sie können hier einen \knopf{Kommentar hinzufügen}.
 
 Sollten Sie persönliche Informationen wie Vorname, Nachname,
@@ -205,6 +206,15 @@ Matrikelnummer, E-Mail-Adresse oder Studiengang ändern wollen, verwenden Sie
 bitte die vorgegebenen Werkzeuge unter dem Reiter \knopf{Benutzerverwaltung}
 oder wenden Sie sich an den Administrator des Systems. Wichtig ist hier, dass
 Ihnen am Portal die Rolle {\em Benutzerverwalter} vom Administrator zugewiesen wurde.
+
+\subsection{Verwaltung des Prüfungsarchivs}
+
+Über \knopf{Studienbüro $\rightarrow$ Prüfungsarchiv} können die Ergebnisse
+archivierter Prüfungen importiert und exportiert werden. Dies erfolgt über ein
+maschinenlesbares xml-Format. Eine Schema-Datei ist im Importieren-Formular
+verfügbar.
+
+\bild{archive}
 
 \clearpage
 \section{Hilfe für Prüfende}
@@ -216,12 +226,10 @@ Kapitel für die Rolle Studienbüro beschrieben.
 
 \subsection{Prüfung erstellen}
 
-Um eine Prüfung zu erzeugen, verwenden sie das Werkzeug \knopf{Herstellen $>$
+Um eine Prüfung zu erzeugen, verwenden sie das Werkzeug \knopf{Herstellen $\rightarrow$ 
 Prüfung} im Reiter \knopf{Prüfungen}. Nach Klicken auf dieses Werkzeug
 folgt der erste Schritt der Erstellung einer Prüfung mit der Auswahl des
 Prüfungstyps. Diese Einstellung kann später nicht mehr geändert werden.
-
-\bild{1}{Pruefung-Erzeugen-Typ}
 
 Für den Prüfungstyp {\em mündlich} können Sie im späteren Verlauf beliebig
 viele Termine zur Prüfung hinzufügen. Zu jedem solchen Termin kann sich
@@ -237,19 +245,20 @@ Studienbüro vorgegebene Namenskonvention.
 Starten Sie im nächsten Schritt den Editor, um die Prüfung genauer zu
 definieren.
 
-\bild{1}{Pruefung-Erzeugen-Editor}
+\bild{exam-edit}
 
-Der Prüfungseditor öffnet sich wie oben beschrieben in einem neuen Reiter mit
+Der Prüfungseditor öffnet sich in einem neuen Reiter mit
 dem Prüfungsnamen als Titel. Zusätzlich wird Ihnen der Titel mit dem Prüfungstyp
-({\em mündlich/schriftlich}) in der {\em Brotkrumennavigation} (rote Markierung)
-angezeigt. Sie können diese Navigation jederzeit verwenden, um die Prüfung
-in der späteren Ansicht zu sehen. 
+({\em mündlich/schriftlich}) in der {\em Brotkrumennavigation}
+angezeigt. Sie können diese Navigation jederzeit verwenden, um zur Prüfungsansicht
+zurückzukehren. 
 
 Im ersten Reiter werden die Prüfungskommentare wie mitzubringende
 Unterlagen, vorzubereitende Prüfungsthemen oder Details zum Modul und Prüfer eintragen.
-Um die Änderungen
-dauerhaft zu machen, bestätigen Sie bitte mit \knopf{Speichern}. Unter
-\knopf{Einschreibung} können sie den Anmelde- und Abmeldezeitraum
+Dieses Feld kann mit HTML formatiert werden.
+Um die Änderungen zu speichern, bestätigen Sie bitte mit \knopf{Speichern}.
+
+Unter \knopf{Einschreibung} können sie den Anmelde- und Abmeldezeitraum
 festlegen. Hier ist darauf zu achten, dass der Beginn des Anmeldezeitraums
 zeitlich vor den beiden Terminen für An- und Abmeldeschluss liegt.
 
@@ -262,7 +271,7 @@ haben, stehen Ihnen noch zwei weitere Attribute zur Verfügung. Das System
 erzeugt dann die bei {\em Anzahl} angegebene Zahl von konsekutiven Terminen
 entsprechend den Angaben bei {\em Pause} und {\em Dauer}.  Sie können auf
 diese Weise mehrfach Termine erzeugen und später auch erzeugte Termine wieder
-löschen.  Bei der Wahl der Termine sollten Sie vorab mglw.\ Rücksprache mit
+löschen. Bei der Wahl der Termine sollten Sie vorab Rücksprache mit
 dem Studienbüro halten, um eventuelle terminliche Kollisionen mit anderen
 Prüfungen zu vermeiden.
 
@@ -273,11 +282,14 @@ wenn vorab spezielle Zulassungsvoraussetzungen zu prüfen sind oder Sie nach
 Anmeldeschluss Lücken in Ihrem Prüfungsplan durch zeitliche Verschiebung von
 Prüfungen zu schließen beabsichtigen.  
 
-Im Vormerkemodus bekommen die Studentinnen und Studenten zunächst den Status {\em Vorgemerkt}. Sie entscheiden dann später für jeden Studierenden einzeln,
-ob dieser den Status {\em Registriert} bekommt und somit zu den zugelassenen Prüflingen gehört.
+Im Vormerkemodus bekommen die Studentinnen und Studenten zunächst den Status
+{\em Vorgemerkt}. Sie entscheiden dann später für jeden Studierenden einzeln,
+ob dieser den Status {\em Registriert} bekommt und somit zu den zugelassenen
+Prüflingen gehört.
 Öffnen Sie dazu den Reiter dieser Prüfung, wählen Sie die zu registrierenden
 Studentinnen und Studenten über das Wahl-Kästchen aus und führen
-Sie die Aktion \knopf{Registrieren} aus. Die Registrierung kann über die Aktion \knopf{Vormerken} wieder rückgängig gemacht werden.
+Sie die Aktion \knopf{Registrieren} aus. Die Registrierung kann über die Aktion
+\knopf{Vormerken} wieder rückgängig gemacht werden.
 
 Unter dem Reiter \knopf{Mehrfacheinschreibung} können Sie einstellen, ob
 Studierende sich zu mehreren Prüfungsterminen anmelden können.
@@ -296,33 +308,12 @@ Prüfung für {\em Alle registrierten OpenOLAT-Benutzer} freigeben.
 
 Ihre Prüfung steht jetzt den Prüflingen zur Einschreibung zur Verfügung.
 
-\subsection{Prüfung abschließen}
-
-Um eine Prüfung abzuschließen, wählen Sie die Aktion \knopf{Prüfung abschließen}
-im Prüfungseditor. Nach dem Abschließen einer Prüfung sind keine Änderungen an
-dieser mehr möglich. Diese Funktion können Sie nutzen, wenn Ihre Prüfung beendet
-und alle Ergebnisse eingetragen wurden.
-
 \subsection{Kontakt mit Prüfling aufnehmen}
 
 Um Kontakt mit einem Prüfling aufzunehmen, wählen Sie in der Liste der
 eingetragenen Studentinnen und Studenten über das Wahl-Kästchen
 diejenigen aus, denen Sie eine E-Mail senden möchten und führen Sie die Aktion
 \knopf{E-Mail senden} aus.
-
-\subsection{Noten und Kommentare eintragen}
-
-Um die Noten der Prüflinge einzutragen, wählen sie in der Liste der Prüflinge
-die entsprechenden Studenten mit einem
-Klick auf das Wahl-Kästchen aus und führen die Aktion \knopf{Noten
-  eintragen} aus. Alle in einem Vorgang ausgewählten Studierenden erhalten die
-gleiche Note.
-
-Um zu Prüflingen einen Kommentar einzutragen, wählen Sie diese
-wie gewohnt über das Wahl-Kästchen aus und führen die Aktion \knopf{Kommentare
- eintragen} aus. Ist bei einem Prüfling schon ein Kommentar vorhanden,
-wird dieser durch den neuen Kommentar ersetzt. Bei Auswahl von nur einem
-Prüfling kann der vorhandene Kommentar editiert werden.
 
 \subsection{Prüflinge nachtragen und entfernen}
 
@@ -338,5 +329,29 @@ Fehlermeldung angezeigt.
 
 Um einen bereits {\em registrierten} oder {\em vorgemerkten} Prüfling abzumelden, wählen
 Sie ihn aus und führen die Aktion \knopf{Austragen} aus.
+
+\subsection{Noten und Kommentare eintragen}
+
+Um die Noten der Prüflinge einzutragen, wählen sie in der Liste der Prüflinge
+die entsprechenden Studenten mit einem
+Klick auf das Wahl-Kästchen aus und führen die Aktion \knopf{Noten
+  eintragen} aus. Alle in einem Vorgang ausgewählten Studierenden erhalten die
+gleiche Note.
+
+Um zu Prüflingen einen Kommentar einzutragen, wählen Sie diese
+wie gewohnt über das Wahl-Kästchen aus und führen die Aktion \knopf{Kommentare
+ eintragen} aus. Ist bei einem Prüfling schon ein Kommentar vorhanden,
+wird dieser durch den neuen Kommentar ersetzt. Bei Auswahl von nur einem
+Prüfling kann der vorhandene Kommentar editiert werden.
+
+\subsection{Prüfung archivieren}
+
+Um eine Prüfung zu archivieren, wählen Sie die Aktion \knopf{Prüfung archivieren}
+im Prüfungseditor. Nach dem Archivieren einer Prüfung sind keine Änderungen an
+dieser mehr möglich. Diese Funktion sollten Sie nutzen, wenn Ihre Prüfung beendet
+ist und alle Ergebnisse eingetragen wurden. Dieser Vorgang kann nicht rückgängig
+gemacht werden.
+
+\bild{exam-archive}
 
 \end{document}
